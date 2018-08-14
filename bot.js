@@ -199,7 +199,7 @@ client.on('message', async msg => {
 		if (!msg.member.voiceChannel) return msg.channel.send("You Must be in a Voice channel to Run the Music commands!");
         if (!serverQueue) return msg.channel.send("There is no Queue to skip!!");
 
-		serverQueue.connection.dispatcher.end('Ok, skipped!');
+		 message.channel.send('Ok, skipped!');
         return undefined;
         
 	} else if (command === `stop`) {
